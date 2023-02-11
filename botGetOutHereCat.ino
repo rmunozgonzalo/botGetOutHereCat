@@ -68,7 +68,7 @@ void setup() {
 
   Serial.println("Mirando por gatos");
   bot.sendMessage(CHAT_ID, "Mirando por gatos", "");
-  digitalWrite(PIN_LED,LOW);
+  digitalWrite(PIN_LED,HIGH);
 
 }
 
@@ -88,9 +88,9 @@ void loop() {
       Serial.println("Desactivando ultrasonido");
       digitalWrite(PIN_RELE,LOW);
       Serial.println("Enviando aviso a mi master");
-      digitalWrite(PIN_LED,HIGH);
-      bot.sendMessage(CHAT_ID, "Ha pasado un gato!!", "");
       digitalWrite(PIN_LED,LOW);
+      bot.sendMessage(CHAT_ID, "Ha pasado un gato!!", "");
+      digitalWrite(PIN_LED,HIGH);
       Serial.println("Aviso enviado");
     }
   delay(500);
