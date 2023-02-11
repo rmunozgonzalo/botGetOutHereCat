@@ -1,8 +1,9 @@
 /*
-  Rui Santos
-  Complete project details at https://RandomNerdTutorials.com/telegram-esp8266-nodemcu-motion-detection-arduino/
-  
-  Project created using Brian Lough's Universal Telegram Bot Library: https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot
+ * Programa para espantar gatos que aparecen en el tejado y molesta con sus ruidos
+ * 
+ * BASE -> https://RandomNerdTutorials.com/telegram-esp8266-nodemcu-motion-detection-arduino/
+ * TELEGRAMBOT-> https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot
+ * 
 */
 
 #include <ESP8266WiFi.h>
